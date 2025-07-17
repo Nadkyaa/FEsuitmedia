@@ -1,10 +1,10 @@
-/* app/components/Pagination.module.css */
+
 .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-    flex-wrap: wrap; /* Allow wrapping */
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -12,7 +12,7 @@
     background: none;
     border: 1px solid #ddd;
     padding: 8px 12px;
-    margin: 0 2px; /* Adjust margin */
+    margin: 0 2px;
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
@@ -28,13 +28,13 @@
     background-color: #007bff;
     color: white;
     border-color: #007bff;
-    pointer-events: none; /* Disable click on active button */
+    pointer-events: none;
 }
 
 .button:disabled {
     cursor: not-allowed;
     opacity: 0.6;
-    background-color: #f8f8f8; /* Lighter background for disabled */
+    background-color: #f8f8f8;
     color: #bbb;
     border-color: #eee;
 }

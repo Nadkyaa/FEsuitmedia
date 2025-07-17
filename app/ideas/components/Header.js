@@ -1,10 +1,10 @@
-// app/ideas/components/Header.js
+
 'use client';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import Image from 'next/image'; // <-- Import Image component
+import Image from 'next/image';
 
 import styles from './Header.module.css';
 
@@ -19,10 +19,8 @@ export default function Header() {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scroll down
         setIsHidden(true);
       } else {
-        // Scroll up
         setIsHidden(false);
       }
 
@@ -43,14 +41,14 @@ export default function Header() {
     <header className={`${styles.header} ${isHidden ? styles.hidden : ''} ${isScrolled ? styles.scrolled : ''}`}>
       <nav className={styles.nav}>
         <div className={styles.logo}>
-          {/* Ganti teks 'Suitmedia' dengan komponen Image */}
-          <Link href="/logo.png"> {/* Opsional: Bungkus logo dengan Link ke halaman utama */}
+          {}
+          <Link href="/logo.png"> {}
             <Image
-              src="/logo.png" // <-- Ganti dengan path ke file logo Anda di folder public
+              src="/logo.png"
               alt="Suitmedia Logo"
-              width={120} // <-- Tentukan lebar logo Anda
-              height={30} // <-- Tentukan tinggi logo Anda
-              priority // Opsional: Untuk memuat logo lebih awal jika penting
+              width={120}
+              height={30}
+              priority
             />
           </Link>
         </div>

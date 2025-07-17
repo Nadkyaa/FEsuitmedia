@@ -1,4 +1,4 @@
-// app/components/Pagination.js
+
 import styles from './Pagination.module.css';
 
 export default function Pagination({ currentPage, pageSize, totalItems, onPageChange }) {
@@ -11,7 +11,6 @@ export default function Pagination({ currentPage, pageSize, totalItems, onPageCh
     let startPage = Math.max(1, currentPage - 2);
     let endPage = Math.min(totalPages, currentPage + 2);
 
-    // Adjust range to always show 5 buttons if possible
     if (currentPage <= 3) {
       endPage = Math.min(totalPages, 5);
     }
