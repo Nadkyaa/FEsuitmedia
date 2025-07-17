@@ -1,0 +1,45 @@
+/* app/components/Pagination.module.css */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 10px;
+}
+
+.button {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    margin: 0 2px; /* Adjust margin */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    font-size: 0.9em;
+}
+
+.button:hover:not(.active),
+.button:focus-visible:not(.active) {
+    background-color: #f0f0f0;
+}
+
+.button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    pointer-events: none; /* Disable click on active button */
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    background-color: #f8f8f8; /* Lighter background for disabled */
+    color: #bbb;
+    border-color: #eee;
+}
+
+.dots {
+    padding: 8px 5px;
+    color: #888;
+}

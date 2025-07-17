@@ -1,0 +1,31 @@
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.sortOptions label, .sortOptions select {
+    margin-left: 15px;
+}
+
+.postList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    grid-column: 1 / -1;
+}
